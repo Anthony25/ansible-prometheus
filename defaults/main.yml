@@ -1,5 +1,5 @@
 ---
-prometheus_version: 2.7.2
+prometheus_version: 2.10.0
 
 prometheus_config_dir: /etc/prometheus
 prometheus_db_dir: /var/lib/prometheus
@@ -83,6 +83,18 @@ prometheus_static_targets_files:
   - prometheus/targets/*.json
 
 prometheus_alert_rules:
+  - alert: Watchdog
+    expr: vector(1)
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      description: 'This is an alert meant to ensure that the entire alerting pipeline is functional.
+        This alert is always firing, therefore it should always be firing in Alertmanager
+        and always fire against a receiver. There are integrations with various notification
+        mechanisms that send a notification when this alert is not firing. For example the
+        "DeadMansSnitch" integration in PagerDuty.'
+      summary: 'Ensure entire alerting pipeline is functional'
   - alert: InstanceDown
     expr: "up == 0"
     for: 5m
@@ -108,7 +120,7 @@ prometheus_alert_rules:
       description: "{% raw %}{{ $labels.instance }} has Critical Memory Usage more than 5 minutes.{% endraw %}"
       summary: "{% raw %}Instance {{ $labels.instance }} has Critical Memory Usage{% endraw %}"
   - alert: CriticalDiskSpace
-    expr: 'node_filesystem_free_bytes{job="node",filesystem!~"^/run(/|$)"} / node_filesystem_size_bytes{job="node"} < 0.1'
+    expr: 'node_filesystem_free_bytes{mountpoint!~"^/run(/.*|$)",fstype!~"(squashfs|fuse.*)",job="node"} / node_filesystem_size_bytes{job="node"} < 0.1'
     for: 4m
     labels:
       severity: critical
@@ -122,3 +134,11 @@ prometheus_alert_rules:
     annotations:
       description: "{% raw %}{{ $labels.instance }} requires a reboot.{% endraw %}"
       summary: "{% raw %}Instance {{ $labels.instance }} - reboot required{% endraw %}"
+  - alert: ClockSkewDetected
+    expr: 'abs(node_timex_offset_seconds) * 1000 > 30'
+    for: 2m
+    labels:
+      severity: warning
+    annotations:
+      description: "{% raw %}Clock skew detected on {{ $labels.instance }}. Ensure NTP is configured correctly on this host.{% endraw %}"
+      summary: "{% raw %}Instance {{ $labels.instance }} - Clock skew detected{% endraw %}"

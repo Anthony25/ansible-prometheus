@@ -1,7 +1,36 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/prometheus)
+## [2.9.1](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-05-27)
+**Closed issues:**
 
+- prometheus\_alert\_rules\_files link is broken [\#207](https://github.com/cloudalchemy/ansible-prometheus/issues/207)
+
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#209](https://github.com/cloudalchemy/ansible-prometheus/pull/209) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- add watchdog and clock skew alerts [\#206](https://github.com/cloudalchemy/ansible-prometheus/pull/206) ([paulfantom](https://github.com/paulfantom))
+
+## [2.9.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-05-04)
+**Fixed bugs:**
+
+- Default CriticalDiskSpace alert using wrong label? [\#201](https://github.com/cloudalchemy/ansible-prometheus/issues/201)
+
+**Merged pull requests:**
+
+- Synchronize files from cloudalchemy/skeleton [\#205](https://github.com/cloudalchemy/ansible-prometheus/pull/205) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Wait for network to be online [\#204](https://github.com/cloudalchemy/ansible-prometheus/pull/204) ([paulfantom](https://github.com/paulfantom))
+- New prometheus/prometheus upstream release! [\#203](https://github.com/cloudalchemy/ansible-prometheus/pull/203) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Update label for CriticalDiskSpace alert expression. [\#202](https://github.com/cloudalchemy/ansible-prometheus/pull/202) ([mjbnz](https://github.com/mjbnz))
+- New prometheus/prometheus upstream release! [\#200](https://github.com/cloudalchemy/ansible-prometheus/pull/200) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [2.8.1](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-03-30)
+**Merged pull requests:**
+
+- set go\_arch as a var instead of calculating it during task execution [\#198](https://github.com/cloudalchemy/ansible-prometheus/pull/198) ([paulfantom](https://github.com/paulfantom))
+- New prometheus/prometheus upstream release! [\#197](https://github.com/cloudalchemy/ansible-prometheus/pull/197) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Synchronize files from cloudalchemy/skeleton. [\#196](https://github.com/cloudalchemy/ansible-prometheus/pull/196) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [2.8.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-03-23)
 **Implemented enhancements:**
 
 - Get more recognition! [\#131](https://github.com/cloudalchemy/ansible-prometheus/issues/131)
@@ -12,12 +41,17 @@
 
 **Closed issues:**
 
+- can't create prometheus user again [\#185](https://github.com/cloudalchemy/ansible-prometheus/issues/185)
+- Implement Uninstalls based on specific variables [\#181](https://github.com/cloudalchemy/ansible-prometheus/issues/181)
 - Allow Multiple blackbox exporters [\#179](https://github.com/cloudalchemy/ansible-prometheus/issues/179)
+- Install prometheus using docker [\#173](https://github.com/cloudalchemy/ansible-prometheus/issues/173)
 
 **Merged pull requests:**
 
+- New prometheus upstream release! [\#193](https://github.com/cloudalchemy/ansible-prometheus/pull/193) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - prometheus.service.j2: stop using tests as filters [\#191](https://github.com/cloudalchemy/ansible-prometheus/pull/191) ([JordanP](https://github.com/JordanP))
 - Preflight checks refactor [\#189](https://github.com/cloudalchemy/ansible-prometheus/pull/189) ([paulfantom](https://github.com/paulfantom))
+- do not remove '/opt/prometheus' [\#188](https://github.com/cloudalchemy/ansible-prometheus/pull/188) ([paulfantom](https://github.com/paulfantom))
 - Parameterise custom static targets file paths [\#187](https://github.com/cloudalchemy/ansible-prometheus/pull/187) ([hamishforbes](https://github.com/hamishforbes))
 - Make prometheus user owner of prometheus folders [\#174](https://github.com/cloudalchemy/ansible-prometheus/pull/174) ([curantes](https://github.com/curantes))
 
