@@ -4,6 +4,95 @@
 
 **Merged pull requests:**
 
+- improve path\_prefix example in defaults [\#266](https://github.com/cloudalchemy/ansible-prometheus/pull/266) ([zxyz](https://github.com/zxyz))
+
+## [2.15.2](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-04-20)
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#284](https://github.com/cloudalchemy/ansible-prometheus/pull/284) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [2.15.1](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-04-14)
+**Merged pull requests:**
+
+- Fix version\_compare filter deprecation [\#282](https://github.com/cloudalchemy/ansible-prometheus/pull/282) ([ecksun](https://github.com/ecksun))
+
+## [2.15.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-04-12)
+**Fixed bugs:**
+
+- Readme variable prometheus\_binaries\_local\_dir [\#279](https://github.com/cloudalchemy/ansible-prometheus/issues/279)
+
+**Merged pull requests:**
+
+- Update Readme variable prometheus\_binary\_local\_dir [\#280](https://github.com/cloudalchemy/ansible-prometheus/pull/280) ([asatblurbs](https://github.com/asatblurbs))
+- added installation method config to skip install [\#272](https://github.com/cloudalchemy/ansible-prometheus/pull/272) ([DEvil0000](https://github.com/DEvil0000))
+
+## [2.14.2](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-03-27)
+**Fixed bugs:**
+
+- CriticalDiskSpace Alert using wrong Metrics [\#275](https://github.com/cloudalchemy/ansible-prometheus/issues/275)
+
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#277](https://github.com/cloudalchemy/ansible-prometheus/pull/277) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- defaults: sync alerts from node-mixin project [\#276](https://github.com/cloudalchemy/ansible-prometheus/pull/276) ([paulfantom](https://github.com/paulfantom))
+
+## [2.14.1](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-03-25)
+**Merged pull requests:**
+
+- Upstream release update [\#274](https://github.com/cloudalchemy/ansible-prometheus/pull/274) ([paulfantom](https://github.com/paulfantom))
+
+## [2.14.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-03-15)
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#265](https://github.com/cloudalchemy/ansible-prometheus/pull/265) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Do not manage system directory [\#263](https://github.com/cloudalchemy/ansible-prometheus/pull/263) ([paulfantom](https://github.com/paulfantom))
+- Add binary install directory [\#259](https://github.com/cloudalchemy/ansible-prometheus/pull/259) ([guimaluf](https://github.com/guimaluf))
+
+## [2.13.2](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-01-20)
+**Merged pull requests:**
+
+- \[REPO SYNC\] Merge pull request \#4 from cloudalchemy/travis\_fix [\#260](https://github.com/cloudalchemy/ansible-prometheus/pull/260) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Improve checksum fetching [\#254](https://github.com/cloudalchemy/ansible-prometheus/pull/254) ([SuperQ](https://github.com/SuperQ))
+
+## [2.13.1](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-01-11)
+**Fixed bugs:**
+
+- prometheus\_version: latest =\> failed to get sha256sums.txt [\#230](https://github.com/cloudalchemy/ansible-prometheus/issues/230)
+
+**Merged pull requests:**
+
+- Switch user login shell to /usr/sbin/nologin [\#258](https://github.com/cloudalchemy/ansible-prometheus/pull/258) ([paulfantom](https://github.com/paulfantom))
+
+## [2.13.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2020-01-08)
+**Closed issues:**
+
+- Use python3-libselinux instead of libselinux-python on RHEL8/CentOS8 [\#244](https://github.com/cloudalchemy/ansible-prometheus/issues/244)
+
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#256](https://github.com/cloudalchemy/ansible-prometheus/pull/256) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- \[REPO SYNC\] use latest available python [\#255](https://github.com/cloudalchemy/ansible-prometheus/pull/255) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- New prometheus/prometheus upstream release! [\#253](https://github.com/cloudalchemy/ansible-prometheus/pull/253) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- New prometheus/prometheus upstream release! [\#252](https://github.com/cloudalchemy/ansible-prometheus/pull/252) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- \[REPO SYNC\] remove IRC link [\#251](https://github.com/cloudalchemy/ansible-prometheus/pull/251) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Fix typo [\#249](https://github.com/cloudalchemy/ansible-prometheus/pull/249) ([Mehonoshin](https://github.com/Mehonoshin))
+- Add CentOS/CentOS-8 support [\#248](https://github.com/cloudalchemy/ansible-prometheus/pull/248) ([ggatward](https://github.com/ggatward))
+- \[REPO SYNC\] add declarative label sync; add autolabelling PRs [\#243](https://github.com/cloudalchemy/ansible-prometheus/pull/243) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- \[REPO SYNC\] molecule: use CI images from quay.io instead of dockerhub [\#241](https://github.com/cloudalchemy/ansible-prometheus/pull/241) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- add option to propagate binaries without access to internet [\#239](https://github.com/cloudalchemy/ansible-prometheus/pull/239) ([paulfantom](https://github.com/paulfantom))
+
+## [2.12.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-11-13)
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#240](https://github.com/cloudalchemy/ansible-prometheus/pull/240) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- \[REPO SYNC\] Update releaser.sh [\#236](https://github.com/cloudalchemy/ansible-prometheus/pull/236) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- \[REPO SYNC\] add support for CentOS8 [\#233](https://github.com/cloudalchemy/ansible-prometheus/pull/233) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- New prometheus/prometheus upstream release! [\#232](https://github.com/cloudalchemy/ansible-prometheus/pull/232) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [2.11.0](https://galaxy.ansible.com/cloudalchemy/prometheus) (2019-10-05)
+**Merged pull requests:**
+
+- New prometheus/prometheus upstream release! [\#231](https://github.com/cloudalchemy/ansible-prometheus/pull/231) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - Synchronize files from cloudalchemy/skeleton [\#227](https://github.com/cloudalchemy/ansible-prometheus/pull/227) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - add RHEL8 and debian buster support; remove testing on debian jessie [\#226](https://github.com/cloudalchemy/ansible-prometheus/pull/226) ([paulfantom](https://github.com/paulfantom))
 - Some "false" were incorrectly substituted to "no" [\#225](https://github.com/cloudalchemy/ansible-prometheus/pull/225) ([wzyboy](https://github.com/wzyboy))
